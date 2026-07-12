@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#ffe6ef;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    color:#ff4d88;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#444;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ff4d88;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to bottom,#fff,#ffe6ef);
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero span{
+    color:#ff4d88;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    text-decoration:none;
+    background:#ff4d88;
+    color:white;
+    padding:12px 30px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff80aa;
+}
+
+/* Sections */
+
+section{
+    padding:70px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#ff4d88;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+/* About */
+
+#about p{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+/* Skills */
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.skill-card{
+    background:#ffe6ef;
+    width:140px;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.skill-card:hover{
+    background:#ff4d88;
+    color:white;
+    transform:translateY(-5px);
+}
+
+/* Contact */
+
+form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    padding:14px;
+    margin-bottom:18px;
+    border:2px solid #ffd1df;
+    border-radius:8px;
+    outline:none;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#ff4d88;
+}
+
+button{
+    padding:14px;
+    border:none;
+    background:#ff4d88;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#ff80aa;
+}
+
+footer{
+    background:#ffe6ef;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+}
